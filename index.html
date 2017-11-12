@@ -40,8 +40,7 @@
       </ul>
       
       <p class="header-contacts">
-        С 10 до 20, ежедневно<br>
-        <span class="contacts-phone"><a href="tel:+78124502525">8 812 450-25-25</a></span>
+        С 10 до 20, ежедневно <a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a>
       </p>
     </header>
 		
@@ -131,10 +130,12 @@
         </div>
       </section>
       
-      <section class="blog-post"> <!-- no need to use article tag -->
-        <h2>Новое в нашем блоге</h2>
-        <h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
-      </section>
+      <article class="blog-post">
+        <b>Новое в нашем блоге</b>
+				<a href="#" target="_blank">
+					<h1>10 способов сервировки фруктовых щербетов к столу</h1>
+				</a>
+      </article>
       
       <section class="email-subscribe"> <!-- todo: striped background -->
         <h2 class="visually-hidden">Подписка на новости</h2>
@@ -213,9 +214,9 @@
           <td class="cart-product-price">400 руб.</td>
         </tr>
       </table>
-      <hr>
+      
       <p class="user-cart-total">Итого: 750 руб.</p>
-      <a class="button" href="#">Оформить заказ</a>
+      <button class="button" href="#">Оформить заказ</button>
     </section>
     <section class="contacts-form-modal">
 			<h2 class="visually-hidden">Форма обратной связи</h2>
