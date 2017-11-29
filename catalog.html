@@ -5,9 +5,10 @@
     <title>Сливочное мороженое в магазине Глейси</title>
   </head>
   <body>
-
     <header class="main-header">
+      <h1 class="visually-hidden">Сливочное мороженое</h1>
       <nav class="main-navigation">
+        <h2 class="visually-hidden">Главное меню</h2>
         <a href="index.html">
           <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
         </a>
@@ -34,26 +35,75 @@
           <li><a class="user-cart cart-has-items" href="#">2 товара</a></li>
         </ul>
       </nav>
-      
       <ul class="breadcrumbs-navigation">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a>Сливочное</a></li>
       </ul>
-      
       <p class="header-contacts">
         С 10 до 20, ежедневно <a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a>
       </p>
     </header>
-    
+
     <main class="container">
-      <h1>Сливочное мороженое</h1>
+      <p class="page-heading">Сливочное мороженое</p>
       <section class="catalog-filters">
-				<h2 class="visually-hidden">Фильтры</h2>
-        <!-- todo: here goes filters form -->
+        <h2 class="visually-hidden">Фильтры</h2>
+        <form class="filters-form" name="user-filters" method="get">
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <select class="filter-field field-dropdown" id="sort" name="sort">
+              <option value="1" selected>по популярности</option>
+              <option value="2">сначала недорогие</option>
+              <option value="3">сначала дорогие</option>
+              <option value="4">по жирности</option>
+            </select>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Цена: 100 руб. &ndash; 500 руб.</legend>
+            <input class="" type="range" min="0" max="700">
+          </fieldset>
+          
+          <fieldset>
+            <legend>Жирность:</legend>
+            <input type="radio" id="fat-zero" name="fats" value="zero">
+            <label for="fat-zero">0&#37;</label>
+            
+            <input type="radio" id="fat-lt10" name="fats" value="lt10" checked>
+            <label for="fat-lt10">до 10&#37;</label>
+            
+            <input type="radio" id="fat-lt30" name="fats" value="lt30">
+            <label for="fat-lt30">до 30&#37;</label>
+            
+            <input type="radio" id="fat-gt30" name="fats" value="gt30">
+            <label for="fat-gt30">более 30&#37;</label>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Наполнители:</legend>
+            <input type="checkbox" id="filler-chocolate" name="fillers[]" value="chocolate" checked>
+            <label for="filler-chocolate">шоколадные</label>
+            
+            <input type="checkbox" id="filler-sugar" name="fillers[]" value="sugar" checked>
+            <label for="filler-sugar">сахарные присыпки</label>
+            
+            <input type="checkbox" id="filler-fruit" name="fillers[]" value="fruit">
+            <label for="filler-fruit">фрукты</label>
+            
+            <input type="checkbox" id="filler-syrup" name="fillers[]" value="syrup">
+            <label for="filler-syrup">сиропы</label>
+            
+            <input type="checkbox" id="filler-jam" name="fillers[]" value="jam">
+            <label for="filler-jam">джемы</label>
+          </fieldset>
+          
+          <input class="button button-filters" type="submit" value="Применить">
+        </form>
       </section>
-      
+
       <section class="catalog">
+        <h2 class="visually-hidden">Перечень продукции</h2>
         <ul class="catalog-list">
           <!-- 1st row -->
           <li class="catalog-item">
@@ -140,7 +190,7 @@
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
         </ul>
-        
+
         <div class="catalog-pagination">
           <span class="pagination-previous"><a href="#">&lt;</a></span>
           <ul class="pagination-list">
@@ -154,7 +204,7 @@
         </div>
       </section>
     </main>
-    
+
     <footer class="main-footer">
       <ul class="footer-social">
         <li><a href="#"><img src="img/twitter-icon.svg" width="32" height="32" alt="Следите за нашим Твиттер аккаунтом"></a></li>
@@ -162,7 +212,6 @@
         <li><a href="#"><img src="img/facebook-icon.svg" width="32" height="32" alt="Подписывайтесь в Фейсбуке"></a></li>
         <li><a href="#"><img src="img/vkontakte-icon.svg" width="32" height="32" alt="Вступайте в нашу группу в ВК"></a></li>
       </ul>
-      
       <p class="footer-info">
         <a href="#" class="heart-mark">Для поставщиков</a><br>
         <a href="#">О Производстве</a>
@@ -171,24 +220,37 @@
         <a href="#">Наши документы</a><br>
         <a href="#">Экологические стандарты</a>
       </p>
-      
       <p class="footer-copyright">
         <a href="//htmlacademy.ru/intensive/htmlcss" target="_blank" rel="nofollow noreferrer"><img class="copyright-logo" src="img/htmlacademy-logo.svg" width="108" height="39" alt="HTML Academy"></a><br>
         Сделано в <a href="//htmlacademy.ru/intensive/htmlcss" target="_blank" rel="nofollow noreferrer">HTML Academy</a> &copy; 2016
       </p>
     </footer>
-		
-		<!-- модальные окна -->
+
+    <!-- user-search -->
     <section class="user-search-modal">
-			<h2 class="visually-hidden">Форма поиска</h2>
-      <!-- todo: search form goes here -->
+      <h2 class="visually-hidden">Форма поиска</h2>
+      <form class="search-form" name="user-search" method="get">
+        <input class="form-field field-search" type="search" name="search" placeholder="Что ищем?" maxlength="100" required>
+      </form>
     </section>
+
+    <!-- user-login -->
     <section class="user-login-modal">
-			<h2 class="visually-hidden">Форма авторизации</h2>
-      <!-- todo: login form goes here -->
+      <h2 class="visually-hidden">Форма авторизации</h2>
+      <form class="login-form" name="user-login" method="post">
+        <input class="form-field field-email" type="email" name="user-email" placeholder="Электронная почта" maxlength="50" required>
+        <input class="form-field field-password" type="password" name="user-password" placeholder="Пароль" maxlength="32" required>
+        <input class="button" type="submit" value="Войти">
+        <p>
+          <a href="#">Забыли пароль?</a> 
+          <a href="#">Новая регистрация</a>
+        </p>
+      </form>
     </section>
+
+    <!-- user-cart -->
     <section class="user-cart-modal">
-			<h2 class="visually-hidden">Корзина пользователя</h2>
+      <h2 class="visually-hidden">Корзина пользователя</h2>
       <table class="user-cart-products">
         <tr>
           <td class="cart-action"><a class="action-delete" href="#">&#215;</a></td><!-- &#215; multiplication sign -->
@@ -205,9 +267,8 @@
           <td class="cart-product-price">400 руб.</td>
         </tr>
       </table>
-      
       <p class="user-cart-total">Итого: 750 руб.</p>
-      <button class="button" href="#">Оформить заказ</button>
+      <a class="button" href="#">Оформить заказ</a>
     </section>
   </body>
 </html>
