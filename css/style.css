@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   font-style: normal;
   line-height: 22px;
@@ -21,7 +21,9 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
-input {
+input,
+select,
+textarea {
   font: inherit;
 }
 
@@ -43,12 +45,15 @@ input {
   line-height: 18px;
 }
 .user-navigation {
-  font-weight: medium;
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
 }
+.cart-has-items {
+  color: #323232;
+}
 .breadcrumbs-navigation {
-  font-weight: regular;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
 }
@@ -60,6 +65,12 @@ input {
 .header-contacts .contacts-phone {
   font-size: 22px;
   line-height: 24px;
+}
+
+/* main */
+.page-heading {
+  font-size: 35px;
+  line-height: 41px;
 }
 
 /* slider */
@@ -98,6 +109,46 @@ input {
   background-color: #472b1f;
 }
 
+/* filters */
+.filters-form legend {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.filters-form label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+.filters-form fieldset {
+  background-color: rgba(255, 255, 255, 0.188);
+}
+.field-dropdown {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  
+  background-color: inherit;
+}
+.field-dropdown:focus {
+  color: #323232;
+  
+  background-color: #ffffff;
+}
+.field-dropdown option {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+}
+.filters-form .button-filters {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  
+  background-color: rgba(255, 255, 255, 0.188);
+}
 /* catalog-items */
 .catalog-item .catalog-price {
   font-size: 45px;
@@ -108,8 +159,20 @@ input {
   line-height: 45px;
 }
 .catalog-item h3 {
-  font-weight: medium;
+  font-weight: 500;
   font-size: 22px;
+}
+
+/* pagination */
+.pagination-list li {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.pagination-list li.active {
+  color: #323232;
+  
+  background-color: #fdfdfd;
 }
 
 /* about */
@@ -117,13 +180,13 @@ input {
   background-color: #f1e5cc;
 }
 .about .heading {
-  font-weight: medium;
+  font-weight: 500;
   font-size: 24px;
   line-height: 30px;
   color: #323232;
 }
 .about p {
-  font-weight: regular;
+  font-weight: 400;
   color: #323232;
 }
 
@@ -132,7 +195,7 @@ input {
   background-color: #ffffff;
 }
 .blog-post b {
-  font-weight: medium;
+  font-weight: 500;
   color: #323232;
 }
 .blog-post h1 {
@@ -162,7 +225,7 @@ input {
   background-color: #f7f7f7;
 }
 .contacts-address p {
-  font-weight: regular;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #323232;
@@ -188,7 +251,7 @@ input {
   line-height: 18px;
 }
 .heart-mark {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* modals */
@@ -207,13 +270,13 @@ input {
   color: inherit;
 }
 .user-cart-products {
-  font-weight: regular;
+  font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   color: #323232;
 }
 .user-cart-products .user-cart-total {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 15px;
   line-height: 18px;
 }
@@ -222,4 +285,13 @@ input {
 }
 .cart-product-quantity span {
   color: #999999;
+}
+
+/* utilities */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
