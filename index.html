@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси - онлайн и офлайн магазин по продаже мороженого собственного производства на развес</title>
+    <link rel="stylesheet" href="https://fonts.google.com/css?family=Roboto:400,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-index-bg1">
     <header class="main-header">
       <h1 class="visually-hidden">Глейси &mdash; онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
       <nav class="main-navigation">
@@ -82,7 +83,7 @@
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class="button banner-button" href="#">Хочу варенье!</a>
           </li>
-          <li class="banner-item shocolate-banner">
+          <li class="banner-item chocolate-banner">
             <h3>Шоколадки даром!</h3>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
             <a class="button banner-button" href="#">Хочу шоколадки!</a>
@@ -96,25 +97,25 @@
           <li class="catalog-item">
             <span class="hot-mark"></span> <!-- todo: change to ::before -->
             <img src="img/catalog-image-01.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <span class="catalog-price">310 &#8381;/кг</span><!-- &#8381; unicode rouble sign -->
+            <span class="catalog-price">310 &#8381;<span>/кг</span></span><!-- &#8381; unicode rouble sign -->
             <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
           </li>
           <li class="catalog-item">
             <span class="hot-mark"></span>
             <img src="img/catalog-image-02.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <span class="catalog-price">380 &#8381;/кг</span>
+            <span class="catalog-price">380 &#8381;<span>/кг</span></span>
             <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
           </li>
           <li class="catalog-item">
             <span class="hot-mark"></span>
             <img src="img/catalog-image-03.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <span class="catalog-price">355 &#8381;/кг</span>
+            <span class="catalog-price">355 &#8381;<span>/кг</span></span>
             <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
           </li>
           <li class="catalog-item">
             <span class="hot-mark"></span>
             <img src="img/catalog-image-04.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <span class="catalog-price">415 &#8381;/кг</span>
+            <span class="catalog-price">415 &#8381;<span>/кг</span></span>
             <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
           </li>
         </ul>
@@ -190,7 +191,7 @@
     </footer>
 
     <!-- user-search -->
-    <section class="user-search-modal">
+    <section class="modal user-search-modal">
       <h2 class="visually-hidden">Форма поиска</h2>
       <form class="search-form" name="user-search" method="get">
         <input class="form-field field-search" type="search" name="search" placeholder="Что ищем?" maxlength="100" required>
@@ -198,7 +199,7 @@
     </section>
 
     <!-- user-login -->
-    <section class="user-login-modal">
+    <section class="modal user-login-modal">
       <h2 class="visually-hidden">Форма авторизации</h2>
       <form class="login-form" name="user-login" method="post">
         <input class="form-field field-email" type="email" name="user-email" placeholder="Электронная почта" maxlength="50" required>
@@ -212,7 +213,7 @@
     </section>
 
     <!-- user-cart -->
-    <section class="user-cart-modal">
+    <section class="modal user-cart-modal">
       <h2 class="visually-hidden">Корзина пользователя</h2>
       <table class="user-cart-products">
         <tr>
@@ -235,7 +236,7 @@
     </section>
 
     <!-- user-feedback -->
-    <section class="feedback-form-modal">
+    <section class="modal feedback-form-modal">
       <h2>Мы обязательно вам ответим</h2>
       <form class="feedback-form" name="user-feedback" method="post">
         <input class="form-field field-name" type="text" name="user-name" placeholder="Как вас зовут?" maxlength="100" required>
