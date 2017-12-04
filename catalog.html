@@ -3,41 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Сливочное мороженое в магазине Глейси</title>
-    <link rel="stylesheet" href="https://fonts.google.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-catalog-bg">
     <header class="main-header">
       <h1 class="visually-hidden">Сливочное мороженое</h1>
-      <nav class="main-navigation">
+      <nav class="main-nav">
         <h2 class="visually-hidden">Главное меню</h2>
         <a href="index.html">
           <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
         </a>
-        <ul class="site-navigation">
-          <li class="active">
-            <a>Каталог</a>
-            <ul class="site-navigation-subitems visually-hidden">
+        <ul class="site-nav">
+          <li class="nav-item">
+            <a class="active">Каталог</a>
+            <ul class="nav-subitems">
               <li>
                 <a href="#">Новинки</a>
               </li>
-              <li><a>Сливочное</a></li><!-- Catalog.html current -->
+              <li><a class="active">Сливочное</a></li><!-- Catalog.html current -->
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лёд</a></li>
               <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
+          <li class="nav-item"><a href="#">Доставка и оплата</a></li>
+          <li class="nav-item"><a href="#">О компании</a></li>
         </ul>
-        <ul class="user-navigation">
+        <ul class="user-nav">
           <li><a class="user-search" href="#">Поиск</a></li>
           <li><a class="user-login" href="#">Вход</a></li>
           <li><a class="user-cart cart-has-items" href="#">2 товара</a></li>
         </ul>
       </nav>
-      <ul class="breadcrumbs-navigation">
+      <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a>Сливочное</a></li>
@@ -64,39 +64,39 @@
           
           <fieldset>
             <legend>Цена: 100 руб. &ndash; 500 руб.</legend>
-            <input class="" type="range" min="0" max="700">
+            <input class="filter-field field-range" type="range" min="0" max="700">
           </fieldset>
           
           <fieldset>
             <legend>Жирность:</legend>
-            <input type="radio" id="fat-zero" name="fats" value="zero">
+            <input class="filter-field" type="radio" id="fat-zero" name="fats" value="zero">
             <label for="fat-zero">0&#37;</label>
             
-            <input type="radio" id="fat-lt10" name="fats" value="lt10" checked>
+            <input class="filter-field" type="radio" id="fat-lt10" name="fats" value="lt10" checked>
             <label for="fat-lt10">до 10&#37;</label>
             
-            <input type="radio" id="fat-lt30" name="fats" value="lt30">
+            <input class="filter-field" type="radio" id="fat-lt30" name="fats" value="lt30">
             <label for="fat-lt30">до 30&#37;</label>
             
-            <input type="radio" id="fat-gt30" name="fats" value="gt30">
+            <input class="filter-field" type="radio" id="fat-gt30" name="fats" value="gt30">
             <label for="fat-gt30">более 30&#37;</label>
           </fieldset>
           
           <fieldset>
             <legend>Наполнители:</legend>
-            <input type="checkbox" id="filler-chocolate" name="fillers[]" value="chocolate" checked>
+            <input class="filter-field" type="checkbox" id="filler-chocolate" name="fillers[]" value="chocolate" checked>
             <label for="filler-chocolate">шоколадные</label>
             
-            <input type="checkbox" id="filler-sugar" name="fillers[]" value="sugar" checked>
+            <input class="filter-field" type="checkbox" id="filler-sugar" name="fillers[]" value="sugar" checked>
             <label for="filler-sugar">сахарные присыпки</label>
             
-            <input type="checkbox" id="filler-fruit" name="fillers[]" value="fruit">
+            <input class="filter-field" type="checkbox" id="filler-fruit" name="fillers[]" value="fruit">
             <label for="filler-fruit">фрукты</label>
             
-            <input type="checkbox" id="filler-syrup" name="fillers[]" value="syrup">
+            <input class="filter-field" type="checkbox" id="filler-syrup" name="fillers[]" value="syrup">
             <label for="filler-syrup">сиропы</label>
             
-            <input type="checkbox" id="filler-jam" name="fillers[]" value="jam">
+            <input class="filter-field" type="checkbox" id="filler-jam" name="fillers[]" value="jam">
             <label for="filler-jam">джемы</label>
           </fieldset>
           <button class="button button-filters" type="submit">Применить</button>
@@ -195,7 +195,7 @@
         <div class="catalog-pagination">
           <a class="pagination-previous" href="#">&lt;</a>
           <ul class="pagination-list">
-            <li class="active"><a>1</a></li>
+            <li><a class="active">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
@@ -228,7 +228,7 @@
     </footer>
 
     <!-- user-search -->
-    <section class="user-search-modal">
+    <section class="modal user-search-modal">
       <h2 class="visually-hidden">Форма поиска</h2>
       <form class="search-form" name="user-search" method="get">
         <input class="form-field field-search" type="search" name="search" placeholder="Что ищем?" maxlength="100" required>
@@ -236,7 +236,7 @@
     </section>
 
     <!-- user-login -->
-    <section class="user-login-modal">
+    <section class="modal user-login-modal">
       <h2 class="visually-hidden">Форма авторизации</h2>
       <form class="login-form" name="user-login" method="post">
         <input class="form-field field-email" type="email" name="user-email" placeholder="Электронная почта" maxlength="50" required>
@@ -250,7 +250,7 @@
     </section>
 
     <!-- user-cart -->
-    <section class="user-cart-modal">
+    <section class="modal user-cart-modal">
       <h2 class="visually-hidden">Корзина пользователя</h2>
       <table class="user-cart-products">
         <tr>
