@@ -11,6 +11,7 @@ html {
 html,
 body {
   margin: 0;
+  padding: 0;
   
   font-weight: 700;
   font-size: 16px;
@@ -23,34 +24,71 @@ body {
 img {
   max-width: 100%;
 }
-a,
-a:visited {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
+a {
   text-decoration: none;
-  color: rgb(255,255,255);
-  
-  border-bottom: 1px;  
-  border-bottom-style: solid;
-  border-bottom-color: rgba(255,255,255,0.3);
 }
-a:active,
-a:hover {
-  color: #ffbc9e;
-  border-bottom-color: rgba(255,188,158,0.3);
-}
-a.inverted,
-a.inverted:visited {
+
+.modal a {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
   color: #323232;
+  
+  border-bottom-width: 1px;  
+  border-bottom-style: solid;
   border-bottom-color: rgba(50,50,50,0.3);
 }
-a.inverted:active,
-a.inverted:hover {
+.modal a:hover,
+.modal a:active {
   color: #e84d37;
+  
   border-bottom-color: rgba(232,77,55,0.3);
 }
 
+.site-nav a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  
+  border-bottom-width: 1px;  
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255,255,255,0.2);
+}
+.site-nav a:hover,
+.site-nav a:active {
+  color: #323232;
+  
+  background-color: #ffffff;
+  border: 0;
+}
+.site-nav a:active {
+  background-color: rgba(248, 247, 244, 0.988);
+  -webkit-box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+          box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+}
+.site-nav a.active,
+.site-nav a.active:hover {
+  color: #ffffff;
+  background-color: #d07058;
+}
+
+.user-nav a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  
+  background-color: rgba(255,255,255,0.2);
+}
+.user-nav a:hover,
+.user-nav a:active {
+  color: #323232;
+  
+  background-color: #ffffff;
+}
+
+/* form styles */
 .form-field {
   font-weight: 700;
   font-size: 16px;
@@ -93,27 +131,6 @@ a.inverted:hover {
 }
 .page-index-bg3 {
   background-color: #9d8b84;
-}
-
-/* nav */
-.site-nav {
-  font-size: 16px;
-  line-height: 18px;
-}
-.nav-item a:hover {
-  color: #333333;
-  
-  background-color: rgb(247, 246, 243);
-}
-.nav-item a:active {
-  background-color: rgba(248, 247, 244, 0.988);
-  -webkit-box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
-          box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
-}
-.nav-item .active {
-  color: #ffffff;
-  
-  background-color: rgb(208, 112, 88);
 }
 
 /* nav subitems */
@@ -169,15 +186,30 @@ a.inverted:hover {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  color: #ffffff;
+  
+  border-bottom-width: 1px;  
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255,255,255,0.2);
 }
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+  border-bottom-color: rgba(255,188,158,0.3);
+}
+
 .header-contacts {
   font-size: 14px;
   line-height: 16px;
   text-align: right;
 }
-.header-contacts .contacts-phone {
+.header-contacts a.contacts-phone {
   font-size: 22px;
   line-height: 24px;
+  color: #ffffff;
+}
+.header-contacts a.contacts-phone:hover {
+  opacity: 0.8;
 }
 
 /* main */
@@ -345,6 +377,14 @@ a.button-large:active {
 }
 
 /* catalog-items */
+.catalog-item a {
+  color: #ffffff;
+  
+  border-bottom-width: 1px;  
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255,255,255,0.2);
+}
+
 .catalog-item .button {
   visibility: hidden;
 }
@@ -364,7 +404,8 @@ a.button-large:active {
 }
 .catalog-item h3 {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /* pagination */
@@ -461,20 +502,28 @@ a.button-large:active {
 }
 
 /* footer */
-.footer a {
+.main-footer a {
   font-weight: 400;
-}
-.footer-info a,
-.footer-docs a {
   font-size: 13px;
   line-height: 18px;
+  color: #ffffff;
+  
+  border-bottom-width: 1px;  
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255,255,255,0.2);
+}
+.main-footer a:hover,
+.main-footer a:active {
+  color: #ffbc9e;
+  
+  border-bottom-color: rgba(255,188,158,0.3);
 }
 .footer-copyright,
 .footer-copyright a {
   font-size: 12px;
   line-height: 18px;
 }
-.heart-mark {
+.main-footer .heart-mark {
   font-weight: 700;
 }
 .footer-social a,
