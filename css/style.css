@@ -222,6 +222,7 @@ a {
 .slider-item h3 {
   font-size: 60px;
   line-height: 60px;
+  text-align: center;
 }
 .pagination-button {
   background-color: transparent;
@@ -267,6 +268,8 @@ a.button:active {
 }
 .button-large,
 a.button-large {
+  width: 280px;
+  
   font-size: 32px;
   line-height: 44px;
   
@@ -406,6 +409,7 @@ a.button-large:active {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+  text-align: center;
 }
 
 /* pagination */
@@ -520,6 +524,7 @@ a.button-large:active {
 }
 .footer-copyright,
 .footer-copyright a {
+  font-weight: 400;
   font-size: 12px;
   line-height: 18px;
 }
@@ -540,6 +545,7 @@ a.button-large:active {
 
 /* modals */
 .modal {
+  display: none;
   background-color: #f8f7f4;
 }
 .modal h2 {
@@ -578,4 +584,221 @@ a.button-large:active {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+/* --- flex styles --- */
+.hl {
+  box-shadow: inset 0 0 0 2px purple;
+}
+body {
+  position: relative;
+  width: 1200px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+.main-header {
+  height: 120px;
+  margin-bottom: 535px;
+  z-index: 200;
+}
+.page-catalog-bg .main-header {
+  margin-bottom: 40px;
+}
+.main-nav {
+  display: flex;
+}
+.site-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 854px;
+  list-style: none;
+}
+.user-nav {
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  width: 270px;
+  height: 69px;
+  list-style: none;
+}
+.subheader {
+  display: flex;
+}
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 854px;
+  height: 50px;
+}
+.header-contacts {
+  margin: 0;
+  padding: 0;
+  width: 170px;
+  margin-left: auto;
+}
+.products-promo-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.promo-slider {
+  width: 1045px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.promo-slider .slider-item {
+  display: none;
+}
+.promo-slider .active {
+  display: block;
+}
+.slider-item h3 {
+  position: absolute;
+  top: 330px;
+  width: 675px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.slider-item a.button {
+  position: absolute;
+  top: 542px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.slider-pagination {
+  position: absolute;
+  top: 600px;
+  left: 27px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slider-pagination li {
+  margin-right: 8px;
+}
+
+.banners {
+  margin-bottom: 40px;
+}
+.banners-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+.banner-item {
+  width: 561px;
+  height: 230px;
+}
+.catalog-filters {
+  margin-bottom: 40px;
+}
+.filters-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 880px;
+}
+.filters-form fieldset {
+  margin-right: 15px;
+}
+.catalog-hot {
+  margin-bottom: 40px;
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.catalog-item {
+  width: 268px;
+}
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
+}
+.catalog-pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pagination-list li,
+.pagination-previous {
+  margin-right: 20px;
+}
+
+.about {
+  margin-bottom: 40px;
+}
+.blog-mail-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.blog-post,
+.email-subscribe {
+  width: 561px;
+  height: 220px;
+}
+.contacts-map {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 430px;
+  margin-bottom: 40px;
+}
+.contacts-map .contacts-address {
+  /* TODO: сделать контакты через контейнер-центровщик */
+  align-self: center;
+  width: 302px;
+  height: 305px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+.footer-links-wrapper {
+  display: flex;
+  width: 330px;
+}
+.footer-info {
+  margin-right: 27px;
+}
+.footer-social {
+  width: 268px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-social li {
+  margin-right: 16px;
+}
+.footer-copyright {
+  width: 191px;
+  margin: 0;
+  padding: 0;
 }

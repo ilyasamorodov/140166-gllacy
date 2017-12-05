@@ -8,50 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-index-bg1">
-    <header class="main-header">
-      <h1 class="visually-hidden">Глейси &mdash; онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
-      <nav class="main-nav">
-        <h2 class="visually-hidden">Главное меню</h2>
-        <a>
-          <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
-        </a>
-        <ul class="site-nav">
-          <li class="nav-item">
-            <a href="#">Каталог</a>
-            <ul class="nav-subitems">
-              <li>
-                <a class="new" href="#">Новинки</a>
-              </li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лёд</a></li>
-              <li><a href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a href="#">Доставка и оплата</a></li>
-          <li class="nav-item"><a href="#">О компании</a></li>
-        </ul>
-        <ul class="user-nav">
-          <li><a class="user-search" href="#">Поиск</a></li>
-          <li><a class="user-login" href="#">Вход</a></li>
-          <li><a class="user-cart" href="#">Пусто</a></li>
-        </ul>
-      </nav>
-
-      <ul class="breadcrumbs">
-        <li class="visually-hidden"><a>Главная</a></li>
-      </ul>
-
-      <p class="header-contacts">
-        С 10 до 20, ежедневно <a class="contacts-phone" href="tel:+78124502525">8&nbsp;812&nbsp;450-25-25</a>
-      </p>
-    </header>
-
     <!-- absolute section out of flow -->
     <section class="products-promo-absolute">
       <h2 class="visually-hidden">Специальные предложения</h2>
       <ul class="promo-slider">
-        <li class="slider-item">
+        <li class="slider-item active">
           <img src="img/slider-1-bg.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
           <h3>Крем-брюле и пломбир с малиновым джемом</h3>
           <a class="button button-large" href="#">Давайте оба!</a>
@@ -73,9 +34,50 @@
         <li><button class="pagination-button">Слайд 3</button></li>
       </ul>
     </section>
+    
+    <header class="main-header hl">
+      <h1 class="visually-hidden">Глейси &mdash; онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+      <nav class="main-nav">
+        <h2 class="visually-hidden">Главное меню</h2>
+        <ul class="site-nav hl">
+          <a>
+            <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
+          </a>
+          <li class="nav-item">
+            <a href="#">Каталог</a>
+            <ul class="nav-subitems visually-hidden">
+              <li>
+                <a class="new" href="#">Новинки</a>
+              </li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лёд</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#">Доставка и оплата</a></li>
+          <li class="nav-item"><a href="#">О компании</a></li>
+        </ul>
+        <ul class="user-nav hl">
+          <li><a class="user-search" href="#">Поиск</a></li>
+          <li><a class="user-login" href="#">Вход</a></li>
+          <li><a class="user-cart" href="#">Пусто</a></li>
+        </ul>
+      </nav>
+      
+      <div class="subheader">
+        <ul class="breadcrumbs hl">
+          <li class="visually-hidden"><a>Главная</a></li>
+        </ul>
+  
+        <p class="header-contacts hl">
+          С 10 до 20, ежедневно <a class="contacts-phone" href="tel:+78124502525">8&nbsp;812&nbsp;450-25-25</a>
+        </p>
+      </div>
+    </header>
 
     <main>
-      <section class="banners">
+      <section class="banners hl">
         <h2 class="visually-hidden">Баннеры</h2>
         <ul class="banners-list">
           <li class="banner-item raspberry-banner">
@@ -91,7 +93,7 @@
         </ul>
       </section>
 
-      <section class="products-hot">
+      <section class="catalog-hot">
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -133,27 +135,29 @@
           <p class="temp-mark">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не даёт мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
         </div>
       </section>
-
-      <article class="blog-post">
-        <b>Новое в нашем блоге</b>
-        <a href="#" target="_blank">
-          <h1>10 способов сервировки фруктовых щербетов к столу</h1>
-        </a>
-      </article>
-
-      <section class="email-subscribe"> <!-- todo: striped background -->
-        <h2 class="visually-hidden">Подписка на новости</h2>
-        <div class="subscribe-inner"> <!-- background for content -->
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="subscribe-form" name="user-subscribe" method="post">
-            <input class="form-field field-email" type="email" name="user-email" placeholder="Электронная почта" maxlength="50" required>
-            <button class="button" type="submit">Отправить</button>
-          </form>
-        </div>
-      </section>
+      
+      <div class="blog-mail-wrapper">
+        <article class="blog-post">
+          <b>Новое в нашем блоге</b>
+          <a href="#" target="_blank">
+            <h1>10 способов сервировки фруктовых щербетов к столу</h1>
+          </a>
+        </article>
+  
+        <section class="email-subscribe"> <!-- todo: striped background -->
+          <h2 class="visually-hidden">Подписка на новости</h2>
+          <div class="subscribe-inner"> <!-- background for content -->
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="subscribe-form" name="user-subscribe" method="post">
+              <input class="form-field field-email" type="email" name="user-email" placeholder="Электронная почта" maxlength="50" required>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
     </main>
 
-    <section class="contacts-map">
+    <section class="contacts-map hl">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contacts-address">
         <p>
@@ -169,24 +173,27 @@
       </div>
     </section>
 
-    <footer class="main-footer">
-      <ul class="footer-social">
+    <footer class="main-footer hl">
+      <ul class="footer-social hl">
         <li><a href="#"><img src="img/twitter-icon.svg" width="32" height="32" alt="Следите за нашим Твиттер аккаунтом"></a></li>
         <li><a href="#"><img src="img/instagram-icon.svg" width="32" height="32" alt="Заходите в наш Инстаграм"></a></li>
         <li><a href="#"><img src="img/facebook-icon.svg" width="32" height="32" alt="Подписывайтесь в Фейсбуке"></a></li>
         <li><a href="#"><img src="img/vkontakte-icon.svg" width="32" height="32" alt="Вступайте в нашу группу в ВК"></a></li>
       </ul>
-      <p class="footer-info">
-        <a href="#" class="heart-mark">Для поставщиков</a>
-        <a href="#">О Производстве</a>
-      </p>
-      <p class="footer-docs">
-        <a href="#">Наши документы</a>
-        <a href="#">Экологические стандарты</a>
-      </p>
-      <p class="footer-copyright">
+      
+      <div class="footer-links-wrapper hl">
+        <p class="footer-info">
+          <a href="#" class="heart-mark">Для поставщиков</a>
+          <a href="#">О&nbsp;производстве</a>
+        </p>
+        <p class="footer-docs">
+          <a href="#">Наши документы</a>
+          <a href="#">Экологические стандарты</a>
+        </p>
+      </div>
+      <p class="footer-copyright hl">
         <a href="//htmlacademy.ru/intensive/htmlcss" target="_blank" rel="nofollow noreferrer"><img class="copyright-logo" src="img/htmlacademy-logo.svg" width="108" height="39" alt="HTML Academy"></a>
-        Сделано в <a href="//htmlacademy.ru/intensive/htmlcss" target="_blank" rel="nofollow noreferrer">HTML Academy</a> &copy; 2016
+        Сделано&nbsp;в&nbsp;<a href="//htmlacademy.ru/intensive/htmlcss" target="_blank" rel="nofollow noreferrer">HTML Academy</a> &copy; 2017
       </p>
     </footer>
 
