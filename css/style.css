@@ -446,34 +446,31 @@ a.button-large:active {
 .banners {
   margin-bottom: 40px;
 }
-.banners-list {
+.banners {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
-.banner-item {
+.banner {
   width: 561px;
   height: 230px;
 }
-.banner-item h3 {
+.banner h3 {
   font-size: 35px;
   line-height: 41px;
 }
-.banner-item p {
+.banner p {
   font-size: 18px;
   line-height: 22px;
 }
-.raspberry-banner {
+.banner-raspberry {
   background-color: #691224;
   background-image: url('../img/raspberry-bg.jpg');
 }
-.chocolate-banner {
+.banner-chocolate {
   background-color: #472b1f;
   background-image: url('../img/chocolate-bg.jpg');
 }
