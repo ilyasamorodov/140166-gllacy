@@ -67,7 +67,7 @@ a {
 }
 .page-catalog-bg .page-heading {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 
 .main-nav {
@@ -575,7 +575,7 @@ a {
 
 /* filters */
 .catalog-filters {
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 .filters-form {
   display: -webkit-box;
@@ -592,11 +592,11 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 860px;
-  height: 132px;
 }
 .filters-form .fieldset {
   position: relative;
   margin: 0;
+  margin-bottom: 40px;
   padding: 7px 14px;
   
   border: 0;
@@ -670,6 +670,7 @@ a {
 }
 .button-filters {
   width: 144px;
+  margin-bottom: 40px;
   padding: 9px 29px;
   
   font-weight: 500;
