@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-catalog-bg">
-    <header class="main-header hl">
+    <header class="main-header">
       <div class="content-wrapper">
         <h1 class="visually-hidden">Сливочное мороженое</h1>
-        <nav class="main-nav hl">
+        <nav class="main-nav">
           <h2 class="visually-hidden">Главное меню</h2>
-          <ul class="site-nav hl">
+          <ul class="site-nav">
             <a class="site-logo" href="index.html">
               <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
             </a>
-            <li class="nav-item">
-              <a class="active">Каталог</a>
+            <li>
+              <a class="nav-item active"><span>Каталог</span></a>
               <ul class="nav-subitems visually-hidden">
                 <li>
                   <a href="#">Новинки</a>
@@ -29,37 +29,37 @@
                 <li><a href="#">Мелорин</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a href="#">Доставка и оплата</a></li>
-            <li class="nav-item"><a href="#">О компании</a></li>
+            <li><a class="nav-item" href="#"><span>Доставка и оплата</span></a></li>
+            <li><a class="nav-item" href="#"><span>О компании</span></a></li>
           </ul>
-          <ul class="user-nav hl">
-            <li><a class="user-search" href="#">Поиск</a></li>
+          <ul class="user-nav">
+            <li><a class="user-search" href="#"><span class="visually-hidden">Поиск</span></a></li>
             <li><a class="user-login" href="#">Вход</a></li>
             <li><a class="user-cart cart-has-items" href="#">2 товара</a></li>
           </ul>
         </nav>
         
         <div class="subheader">
-          <ul class="breadcrumbs hl">
+          <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Каталог</a></li>
             <li><a>Сливочное</a></li>
           </ul>
     
-          <p class="header-contacts hl">
+          <p class="header-contacts">
             С 10 до 20, ежедневно <a class="contacts-phone" href="tel:+78124502525">8&nbsp;812&nbsp;450-25-25</a>
           </p>
         </div>
       </div>
     </header>
 
-    <main class="hl">
+    <main class="none">
       <div class="content-wrapper">
         <p class="page-heading">Сливочное мороженое</p>
-        <section class="catalog-filters hl">
+        <section class="catalog-filters">
           <h2 class="visually-hidden">Фильтры</h2>
           <form class="filters-form" name="user-filters" method="get">
-            <fieldset class="sorting">
+            <fieldset class="fieldset sorting">
               <legend>Сортировка:</legend>
               <select class="filter-field field-dropdown" id="sort" name="sort">
                 <option value="1" selected>по популярности</option>
@@ -69,41 +69,42 @@
               </select>
             </fieldset>
             
-            <fieldset>
+            <fieldset class="fieldset">
               <legend>Цена: 100 руб. &ndash; 500 руб.</legend>
-              <input class="filter-field field-range" type="range" min="0" max="700">
+              <input class="filter-field field-range visually-hidden" type="range" id="price-range" min="0" max="700">
+              <label for="price-range">&nbsp;</label>
             </fieldset>
             
-            <fieldset>
+            <fieldset class="fieldset">
               <legend>Жирность:</legend>
-              <input class="filter-field" type="radio" id="fat-zero" name="fats" value="zero">
+              <input class="filter-field visually-hidden" type="radio" id="fat-zero" name="fats" value="zero">
               <label for="fat-zero">0&#37;</label>
               
-              <input class="filter-field" type="radio" id="fat-lt10" name="fats" value="lt10" checked>
+              <input class="filter-field visually-hidden" type="radio" id="fat-lt10" name="fats" value="lt10" checked>
               <label for="fat-lt10">до 10&#37;</label>
               
-              <input class="filter-field" type="radio" id="fat-lt30" name="fats" value="lt30">
+              <input class="filter-field visually-hidden" type="radio" id="fat-lt30" name="fats" value="lt30">
               <label for="fat-lt30">до 30&#37;</label>
               
-              <input class="filter-field" type="radio" id="fat-gt30" name="fats" value="gt30">
+              <input class="filter-field visually-hidden" type="radio" id="fat-gt30" name="fats" value="gt30">
               <label for="fat-gt30">более 30&#37;</label>
             </fieldset>
             
-            <fieldset>
+            <fieldset class="fieldset">
               <legend>Наполнители:</legend>
-              <input class="filter-field" type="checkbox" id="filler-chocolate" name="fillers[]" value="chocolate" checked>
+              <input class="filter-field visually-hidden" type="checkbox" id="filler-chocolate" name="fillers[]" value="chocolate" checked>
               <label for="filler-chocolate">шоколадные</label>
               
-              <input class="filter-field" type="checkbox" id="filler-sugar" name="fillers[]" value="sugar" checked>
+              <input class="filter-field visually-hidden" type="checkbox" id="filler-sugar" name="fillers[]" value="sugar" checked>
               <label for="filler-sugar">сахарные присыпки</label>
               
-              <input class="filter-field" type="checkbox" id="filler-fruit" name="fillers[]" value="fruit">
+              <input class="filter-field visually-hidden" type="checkbox" id="filler-fruit" name="fillers[]" value="fruit">
               <label for="filler-fruit">фрукты</label>
               
-              <input class="filter-field" type="checkbox" id="filler-syrup" name="fillers[]" value="syrup">
+              <input class="filter-field visually-hidden" type="checkbox" id="filler-syrup" name="fillers[]" value="syrup">
               <label for="filler-syrup">сиропы</label>
               
-              <input class="filter-field" type="checkbox" id="filler-jam" name="fillers[]" value="jam">
+              <input class="filter-field visually-hidden" type="checkbox" id="filler-jam" name="fillers[]" value="jam">
               <label for="filler-jam">джемы</label>
             </fieldset>
             <button class="button button-filters" type="submit">Применить</button>
@@ -202,13 +203,13 @@
   
           <div class="catalog-pagination">
             <ul class="pagination-list">
-              <a class="pagination-previous" href="#">&lt;</a>
+              <a class="pagination-previous disabled" href="#"><span class="visually-hidden">Назад</span></a>
               <li><a class="active">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
               <li><a href="#">4</a></li>
               <li><a href="#">5</a></li>
-              <a class="pagination-next" href="#">&gt;</a>
+              <a class="pagination-next" href="#"><span class="visually-hidden">Вперёд</span></a>
             </ul>
           </div>
         </section>
