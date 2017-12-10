@@ -224,9 +224,10 @@ a {
 .user-cart.cart-has-items {
   color: #323232;
   
-  background-color: #ffffff;
+  background-color: rgb(248, 247, 244);
 }
-.user-cart.cart-has-items::before {
+.user-cart.cart-has-items::before,
+.user-cart.cart-has-items:hover::before {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIyMCI+PHBhdGggZmlsbD0iI0U4NEQzNyIgZD0iTTUuODg4IDQuMDMxTDYuOTIyIDEzaDEwLjQ1bDEuMTc2LTguOTY5eiIvPjxjaXJjbGUgZmlsbD0iIzM0MzQzNCIgY3g9IjYuOTg0IiBjeT0iMTgiIHI9IjIiLz48Y2lyY2xlIGZpbGw9IiMzNDM0MzQiIGN4PSIxNS45ODQiIGN5PSIxOCIgcj0iMiIvPjxwYXRoIGZpbGw9IiMzNDM0MzQiIGQ9Ik01LjY1NyAyLjAzMUw1LjQyMiAwSDB2MmgzLjY0bDEuNSAxM2gxMy45ODhsMS42OTktMTIuOTY5SDUuNjU3ek0xNy4zNzIgMTNINi45MjJMNS44ODggNC4wMzFoMTIuNjZMMTcuMzcyIDEzeiIvPjwvc3ZnPg==);
 }
 
