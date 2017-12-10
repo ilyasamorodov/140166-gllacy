@@ -1228,19 +1228,16 @@ a {
   cursor: pointer;
 }
 .action-delete {
-  position: relative;
-}
-.action-delete::before {
-  position: absolute;
-  top: 12px;
-  left: 0;
-  content: "";
+  display: inline-block;
   width: 11px;
   height: 11px;
   
+  border: 0;
+  background-color: transparent;
   background-image: url('../img/modal-icon-close.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 
 .user-cart-products {
