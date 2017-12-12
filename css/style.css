@@ -1421,9 +1421,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .user-search-modal {
   left: auto;
@@ -1481,9 +1481,10 @@ a {
   margin: 0;
 }
 .link-item {
+  display: block;
   font-weight: 400;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 24px;
 }
 .login-controls .button {
   margin-right: 20px;
