@@ -10,11 +10,7 @@ html {
 }
 html,
 body {
-  position: relative;
-  
-  width: 1200px;
   margin: 0;
-  margin: 0 auto;
   padding: 0;
   
   font-weight: 700;
@@ -32,7 +28,11 @@ img {
 a {
   text-decoration: none;
 }
-
+.page-wrapper {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
 .content-wrapper {
   width: 1146px;
   margin: 0 auto;
@@ -600,7 +600,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   
   text-align: right;
 }
@@ -726,7 +728,8 @@ a {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: '';
+  -o-text-overflow: '';
+     text-overflow: '';
 }
 .field-dropdown::-ms-expand { 
   display: none; 
@@ -1210,7 +1213,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-bottom: 40px;
 }
 .blog-post,
@@ -1302,7 +1307,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 268px;
   min-height: 57px;
   list-style: none;
@@ -1471,7 +1478,7 @@ a {
 }
 .user-login-modal {
   left: auto;
-  right: 135px;
+  right: 152px;
   top: 67px;
 }
 .user-login-modal .login-controls {
@@ -1484,7 +1491,7 @@ a {
 }
 .user-search-modal {
   left: auto;
-  right: 238px;
+  right: 255px;
   top: 67px;
 }
 .user-search-modal .form-field {
@@ -1549,7 +1556,7 @@ a {
 
 .user-cart-modal {
   left: auto;
-  right: 28px;
+  right: 27px;
   top: 67px;
 }
 .user-cart-modal .user-cart-total {
